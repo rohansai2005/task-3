@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Protfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/svg-with-js.min.css" integrity="sha512-JgLoPAy0vc/kYzFhTyokdFDtyTdsU5TiJQ1zzMHL4aL0QnDdWGC5CnG3FZ7eRhncidUaFoqB7W/Hbs8X0cvzXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <style>
+            *{
+    padding:0;
+    margin:0;
+    font-family:'Josefin sans',sans-serif;
+    box-sizing:border-box;
+}
+.start{
+    height:100vh;
+    width:100%;
+    background-image:url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/H5BOVymHiplawzr0/videoblocks-business-woman-working-on-computer-sitting-by-the-window-in-the-office-portrait-of-a-young-woman-in-business-attire-in-the-workplace_h3tiihsibb_thumbnail-1080_01.png');
+    background-size:cover;
+    background-position:centre;
+}
+nav{
+    display:flex;
+    align-items:centre;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color:#f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:#f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: :scale(1.2);
+}
+.content{
+    position: absolute;
+    top:50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.latter form{
+    width:380px;
+    max-width:100% ;
+    position: relative;
+}
+.latter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline:none;
+    border-radius: 30px;
+}
+.latter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585 ;
+    top:6px;
+    right:6px;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+    background-image:url('http://4.bp.blogspot.com/-XqFXWEmUzaI/URy4gx6IkwI/AAAAAAAAB2w/5DAWOZV6Gec/s1600/cool-colorful-wallpaper-designs1.jpg');
+}
+.about img{
+    height: auto;
+    width: 430px;
+
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 3 3;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color:white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px ;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.service{
+    background-image:url('https://tse2.mm.bing.net/th?id=OIP.SZP1shyab09Nh5_DgZ_nAwHaEo&pid=Api&P=0&h=180');
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color:white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: centre;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: centre;
+    margin: 25px 0px;
+    color:#f9004d;
+}
+h5{
+    color:white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px ;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background-image:url('https://cdn.wallpapersafari.com/57/82/bkaIs4.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-m .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px ;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-m .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image:url('https://cdn.wallpapersafari.com/80/87/USyNfb.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: blue;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.End{
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
+        </style>
+
+        <div class="start">
+            <nav>
+                <h2 class="logo">Portfo<span>lio</span></h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a href="#" class="btn">Subscribe</a>
+                </nav>
+
+                <div class="content">
+                    <h4>Hello, This is </h4>
+                    <h1>Rohan</h1>
+                    <h3>I'am a Entrepreneur</h3>
+                    <div class="latter">
+                        <form>
+                            <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                            <input type="submit" name="submit" value="Lets Start">
+                        </form>
+                    </div>
+                </div>
+                </div>
+
+                <section class="About">
+                    <div class="main">
+
+                        <img src= "http://4.bp.blogspot.com/-XqFXWEmUzaI/URy4gx6IkwI/AAAAAAAAB2w/5DAWOZV6Gec/s1600/cool-colorful-wallpaper-designs1.jpg" height="90%" width="60%">
+                        <div class="about-text"></div>
+                        <h2>About Me</h2>
+                        <h5>Builder, Opportunist, <span>Innovator & Specialist</span></h5>
+                        <p>I'am a Entrepreneur A person who undertakes the risk of starting a new business venture is called an entrepreneur. It is the process that led to the discovery of opportunities.</p>
+                        <button type="button">Let's Talk</button>
+                        <img src="https://www.wallsauce.com/images/2021-07/blobid1626179887392.jpg" height="90%" width="60%">
+                    </div>
+                </div>
+                </section>
+
+                <div class="service">
+                    <div class="title">
+                        <h2>Our Services</h2>
+                    </div>
+
+                    <div class="box">
+                        <div class="card">
+                            <i class="fa-solid fa-bars"></i>
+                            <h5>Builder</h5>
+                            <div class="pra">
+                                <p>These individuals seek to build out a strong infrastructure by hiring the best talent and seeking the best investors. </p>
+
+                                <p style="text-align: centre;">
+                                    <a class="button" href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <i class="fa-solid fa-user"></i>
+                            <h5>Opportunist</h5>
+                            <div class="pra">
+                                <p>Opportunistic entrepreneurs are optimistic individuals with the ability to pick out financial opportunities, get in at the right time. </p>
+
+                                <p style="text-align: centre;">
+                                    <a class="button" href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <h5>Innovator</h5>
+                            <div class="pra">
+                                <p>Innovators are those rare individuals that come up with a great idea that no one has thought of before. Think of  Steve Jobs, and Mark Zuckerberg. These individuals worked on what they loved and found business opportunities .</p>
+
+                                <p style="text-align: centre;">
+                                    <a class="button" href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <h5>Specialist</h5>
+                            <div class="pra">
+                                <p>These individuals are analytical and risk-averse. They have a strong skill set in a specific area obtained through education or apprenticeship. A specialist entrepreneur will build out their business through networking and referrals. </p>
+
+                                <p style="text-align: centre;">
+                                    <a class="button" href="#">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contact-me">
+
+                    <p>Let Me Teach You Some Tips On Entrepreneurship...</p>
+                    <a class="button-two" href="#">Check Out</a>
+                </div>
+
+                <footer>
+                    <p>Rohan</p>
+                    <p>For more Entrepreneurship Tips - please subscribe to our channel:</p>
+                    <nav>
+                        <a href="#" class="btn">Subscribe</a>
+                        </nav>
+
+
+                    </div>
+                    <p class="End">CopyRight By Rohan</p>
+
+                </footer>
+    </body>
+    </html>
